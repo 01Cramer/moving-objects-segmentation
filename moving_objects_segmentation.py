@@ -191,8 +191,9 @@ def runOnVideo(video, max_frames):
                     corr_g = stats.pearsonr(pixels_g, pixels_g_prev).statistic
                     corr_r = stats.pearsonr(pixels_r, pixels_r_prev).statistic
                     avg_corr = (corr_b + corr_g + corr_r) / 3
-                    print(i)
-                    print(avg_corr)
+                    # Debug prints
+                    #print(i)
+                    #print(avg_corr)
                 if avg_corr > 0.99 or not found_in_prev:
                     indx_to_remove.append(i)
 
@@ -204,7 +205,7 @@ def runOnVideo(video, max_frames):
         # removing objects that are not moving
         modified_outputs = remove_given_indxes(modified_outputs, indx_to_remove)
 
-        if read_frames:
+        if read_frames: # Skip first frame
             frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
  
             # Draw a visualization of the predictions using the video visualizer
