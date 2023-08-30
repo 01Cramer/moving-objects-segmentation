@@ -72,7 +72,7 @@ video_writer = cv2.VideoWriter('test_sample_0.mp4', fourcc=cv2.VideoWriter_fourc
 # initialize predictor
 cfg = get_cfg()
 point_rend.add_pointrend_config(cfg)
-cfg.MODEL.DEVICE = 'cpu'  # Ustawienie modelu w tryb CPU
+cfg.MODEL.DEVICE = 'cpu'  # CPU
 cfg.merge_from_file("projects/PointRend/configs/InstanceSegmentation/pointrend_rcnn_X_101_32x8d_FPN_3x_coco.yaml")
 cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.95  # Set threshold for object detection
 cfg.MODEL.WEIGHTS = "detectron2://PointRend/InstanceSegmentation/pointrend_rcnn_X_101_32x8d_FPN_3x_coco/28119989/model_final_ba17b9.pkl"
