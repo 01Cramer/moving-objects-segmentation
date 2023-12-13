@@ -1,9 +1,11 @@
 ## Moving objects segmentation
 This is software made for moving objects segmenatation build with [Detectron2](https://github.com/facebookresearch/detectron2) library.
-It has been used to improve depth maps. [Link to paper](http://www.multimedia.edu.pl/publications/m64708-MIV-New-depth-maps-for-selected-CTC-sequences.pdf)
+
+It has been used to improve depth maps. [Link to paper](http://www.multimedia.edu.pl/publications/m64708-MIV-New-depth-maps-for-selected-CTC-sequences.pdf).
 
 ## Results
 Results presented are based on a sample short video sequence consisting of 7 frames.
+
 ![](https://github.com/01Cramer/moving-objects-segmentation/blob/main/test_on_sample_8.gif)
 
 ## Overview
@@ -12,7 +14,7 @@ Although there is still plenty of room for improvement.
 
 ## Citing Detectron2
 If you use Detectron2 in your research or wish to refer to the baseline results published in the Model Zoo, please use the following BibTeX entry.
-
+```
 @misc{wu2019detectron2,
   author =       {Yuxin Wu and Alexander Kirillov and Francisco Massa and
                   Wan-Yen Lo and Ross Girshick},
@@ -20,6 +22,6 @@ If you use Detectron2 in your research or wish to refer to the baseline results 
   howpublished = {\url{https://github.com/facebookresearch/detectron2}},
   year =         {2019}
 }
-
+```
 
 
